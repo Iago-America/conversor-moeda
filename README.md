@@ -1,2 +1,3 @@
-# conversor-moeda
-Conversor de câmbio criado a partir da linguagem Kotlin.
+# Conversor de Moedas
+
+Criado a partir da linguagem Kotlin.
