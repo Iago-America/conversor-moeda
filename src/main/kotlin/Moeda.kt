@@ -1,24 +1,30 @@
-const val sim = "sim"
-const val não = "não"
+const val Sim = "Sim"
+const val Não = "Não"
 
 fun main() {
 
-    print("\n" + "Bem vindo ao conversor de moedas criado por Iago\n" +
-        "Antes de começarmos poderia digitar seu nome?\n")
+    print("""
+        
+        Bem vindo ao conversor de moedas criado por Iago.
+        Antes de começarmos você poderia digitar seu nome?
+        Sim ou Não?
+        Digite: """.trimIndent())
 
     val pergunta = readLine()!!
 
-    if (pergunta == sim) {
+    if (pergunta == Sim) {
         print("\n"+"Digite seu nome: ")
             val name = readLine()
 
-        print("\n"+"Bem vindo $name! Espero que você esteja bem.\n" +
-                "Qual moeda você quer comprar?\n\n" +
-                "1 -> Dólar\n" +
-                "2 -> Euro\n" +
-                "3 -> Libra Esterlina\n" +
-                "4 -> Peso Argentino\n\n" +
-                "Digite: ")
+        print("""
+            |Bem vindo $name! Espero que você esteja bem.
+            |Qual moeda você quer comprar?
+            |
+            |1 -> Dólar
+            |2 -> Euro
+            |3 -> Libra Esterlina
+            |4 -> Peso Argentino
+            |Digite:""".trimMargin())
 
         var x = Integer.valueOf(readLine())
 
@@ -71,7 +77,7 @@ fun main() {
         }
     }
 
-    else if (pergunta == não) {
+    else if (pergunta == Não) {
         print("\n"+"Tudo bem, respeito seu anonimato")
 
         print("\n"+"Bem vindo! Espero que você esteja bem.\n" +
