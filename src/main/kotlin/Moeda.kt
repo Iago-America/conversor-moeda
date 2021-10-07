@@ -2,7 +2,6 @@ const val sim = "sim"
 const val não = "não"
 
 fun main() {
-    //var resultado:Double?
 
     print("\n" + "Bem vindo ao conversor de moedas criado por Iago\n" +
         "Antes de começarmos poderia digitar seu nome?\n")
