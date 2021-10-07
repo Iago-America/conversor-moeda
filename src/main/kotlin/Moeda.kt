@@ -67,7 +67,7 @@ fun main() {
             }else if (x == 4) {
                 print("""
                     |---------------------------------------
-                    |Quantas pesos argentinos você pretende comprar?
+                    |Quantos pesos argentinos você pretende comprar?
                     |Digite o valor: """.trimMargin())
 
                 var a = readLine()!!.toFloat()
