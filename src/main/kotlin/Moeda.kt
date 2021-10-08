@@ -1,6 +1,11 @@
 const val Sim = "Sim"
 const val Não = "Não"
 
+fun cambioDolar(n: Float): Float{return n * 5.52.toFloat()}
+fun cambioEuro(n: Float): Float{return n * 6.38.toFloat()}
+fun cambioLibra(n: Float): Float{return n * 7.51.toFloat()}
+fun cambioPeso(n: Float): Float{return n * 0.056.toFloat()}
+
 fun main() {
 
     print("""
@@ -31,12 +36,8 @@ fun main() {
                     |Digite o valor: U$ """.trimMargin())
 
                 var a = readLine()!!.toFloat()
-                var b = 5.52
 
-                var resultado = a * b
-
-
-                print ("\n$name, você terá que pagar R$$resultado reais \n")
+                print ("\n$name, você terá que pagar R$${cambioDolar(a)} reais \n")
 
             }else if (x == 2) {
                 print("""
@@ -45,11 +46,8 @@ fun main() {
                     |Digite o valor: €""".trimMargin())
 
                 var a = readLine()!!.toFloat()
-                var b = 6.38
 
-                var resultado = a * b
-
-                print ("\n" + "$name, você terá que pagar R$$resultado reais\n")
+                print ("\n" + "$name, você terá que pagar R$${cambioEuro(a)} reais\n")
 
             }else if (x == 3) {
                 print("""
@@ -58,11 +56,8 @@ fun main() {
                     |Digite o valor: £""".trimMargin())
 
                 var a = readLine()!!.toFloat()
-                var b = 7.51
 
-                var resultado = a * b
-
-                print ("\n" + "$name, você terá que pagar R$$resultado reais\n")
+                print ("\n" + "$name, você terá que pagar R$${cambioLibra(a)} reais\n")
 
             }else if (x == 4) {
                 print("""
@@ -71,11 +66,8 @@ fun main() {
                     |Digite o valor: """.trimMargin())
 
                 var a = readLine()!!.toFloat()
-                var b = 0.056
 
-                var resultado = a * b
-
-                print ("\n" + "$name, você terá que pagar R$$resultado reais\n")
+                print ("\n" + "$name, você terá que pagar R$${cambioPeso(a)} reais\n")
 
             }else {
                 print("Essa operação não existe! Recomece e escolha entre 1, 2, 3 e 4")
