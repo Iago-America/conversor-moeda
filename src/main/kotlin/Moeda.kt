@@ -1,7 +1,7 @@
-fun cambioDolar(n: Float) = n * 5.52.toFloat()
-fun cambioEuro(n: Float) = n * 6.38.toFloat()
-fun cambioLibra(n: Float) = n * 7.51.toFloat()
-fun cambioPeso(n: Float) = n * 0.056.toFloat()
+fun cambioDolar(n: Float) = n * 5.52f
+fun cambioEuro(n: Float) = n * 6.38f
+fun cambioLibra(n: Float) = n * 7.51f
+fun cambioPeso(n: Float) = n * 0.056f
 
 fun main() {
 
