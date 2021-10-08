@@ -1,10 +1,10 @@
 const val Sim = "Sim"
 const val Não = "Não"
 
-fun cambioDolar(n: Float): Float{return n * 5.52.toFloat()}
-fun cambioEuro(n: Float): Float{return n * 6.38.toFloat()}
-fun cambioLibra(n: Float): Float{return n * 7.51.toFloat()}
-fun cambioPeso(n: Float): Float{return n * 0.056.toFloat()}
+fun cambioDolar(n: Float) = n * 5.52.toFloat()
+fun cambioEuro(n: Float) = n * 6.38.toFloat()
+fun cambioLibra(n: Float) = n * 7.51.toFloat()
+fun cambioPeso(n: Float) = n * 0.056.toFloat()
 
 fun main() {
 
