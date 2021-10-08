@@ -1,6 +1,3 @@
-const val Sim = "Sim"
-const val Não = "Não"
-
 fun cambioDolar(n: Float) = n * 5.52.toFloat()
 fun cambioEuro(n: Float) = n * 6.38.toFloat()
 fun cambioLibra(n: Float) = n * 7.51.toFloat()
